@@ -1,0 +1,55 @@
+﻿using FluentAssertions;
+using IMDbAutomationTask.UI.Test.Pages;
+using System;
+using TechTalk.SpecFlow;
+
+namespace IMDbAutomationTask.UI.Test.Step_Definitions.Tests
+{
+    [Binding]
+    public class SignInToIMDbAccountSteps
+    {
+        private readonly IMDbSignInPage iMDbSignInPage = new IMDbSignInPage();
+        private readonly IMDbPagesHeader iMDbPagesHeader = new IMDbPagesHeader();
+
+        [StepDefinition(@"I am in the Sign In page")]
+        public void GivenIAmInTheCreateSignInPage()
+        {
+            //Navigates to the Sign In page
+            iMDbPagesHeader.PageHeaderSignInButton.Click();
+
+            //Clicks on the 'Sign In With IMDb' button on the Home Page
+            iMDbSignInPage.SignInWithIMDbButton.Click();
+        }
+        [StepDefinition(@"I enter user email '(.*)'")]
+        public void WhenIEnterUserEmail(string p0)
+        {
+            //Enter string in Email field
+            iMDbSignInPage.EmailInputField.SendKeys("slegr002@fiu.edu");
+        }
+
+        [StepDefinition(@"I enter user password '(.*)'")]
+        public void WhenIEnterUserPassword(string p0)
+        {
+            //Enter string in password field 
+            iMDbSignInPage.PasswordInputField.SendKeys("Brasil_12");
+        }
+
+        [StepDefinition(@"I click on the Sign In button")]
+        public void WhenIClickOnTheSignInButton()
+        {
+            //Clicks on the SignInSubmit button
+            iMDbSignInPage.SignInSubmitButton.Click();
+        }
+
+        [StepDefinition(@"I'm signed in to user account for '(.*)'")]
+        public void ThenIMSignedInToMyUserAccount(string userName)
+        {
+            //Verify that the user is signed in successfully
+            iMDbPagesHeader.PageHeaderUserAccountButton
+                .Text
+                .Equals("Sebastien")
+                .Should()
+                .BeTrue("because the string Sebastien should displayed o the User Account button");
+        }
+    }
+}
