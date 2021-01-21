@@ -9,6 +9,16 @@ namespace IMDbAutomationTask.UI.Test.Pages
     class IMDbPagesHeader: BasePage
     {
         /// <summary>
+        /// Finds the input Element that represents the Suggestion Search Bar
+        /// </summary>
+        public IWebElement PageHeaderSearchBar => this.LookUpElement(By.Id("suggestion-search"));
+
+        /// <summary>
+        /// Finds the button Element that represents the Suggestion Search Bar
+        /// </summary>
+        public IWebElement PageHeaderSearchButton => this.LookUpElement(By.Id("suggestion-search-button"));
+
+        /// <summary>
         /// Finds element for the PageHeader SignIn button
         /// </summary>
         public IWebElement PageHeaderSignInButton =>

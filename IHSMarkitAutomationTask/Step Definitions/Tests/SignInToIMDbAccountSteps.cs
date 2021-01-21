@@ -16,10 +16,15 @@ namespace IMDbAutomationTask.UI.Test.Step_Definitions.Tests
         {
             //Navigates to the Sign In page
             iMDbPagesHeader.PageHeaderSignInButton.Click();
-
-            //Clicks on the 'Sign In With IMDb' button on the Home Page
-            iMDbSignInPage.SignInWithIMDbButton.Click();
         }
+
+        [StepDefinition(@"I select to '(.*)'")]
+        public void WhenISelectTo(string signInMethod)
+        {
+            //Clicks on the 'Sign In With IMDb' button              
+            iMDbSignInPage.SignInWithIMDbButton(signInMethod).Click();
+        }
+
         [StepDefinition(@"I enter user email '(.*)'")]
         public void WhenIEnterUserEmail(string p0)
         {

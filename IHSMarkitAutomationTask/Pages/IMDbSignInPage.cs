@@ -16,8 +16,8 @@ namespace IMDbAutomationTask.UI.Test.Pages
         /// <summary>
         /// Finds the span element for the 'Sign in with IMDb' button 
         /// </summary>
-        public IWebElement SignInWithIMDbButton =>
-            this.LookUpElement(By.XPath("//*[@class='auth-provider-text' and text()='Sign in with IMDb']"));
+        public IWebElement SignInWithIMDbButton(string signInMethod) =>
+            this.LookUpElement(By.XPath("//*[@class='auth-provider-text' and text()='" + signInMethod + "']"));
 
         /// <summary>
         /// Finds element that represents the 'Create a New Account' button
