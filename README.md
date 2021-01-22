@@ -1,10 +1,10 @@
 # IMDbAutomationTaskGit
 
-#Required Tools
+# Required Tools
 Visual Studio Professional 
 SpecFlow Extension
 
-#Nuget Packages
+# Nuget Packages
 FluentAssertions (to assert results)
 NUnit (To run the test in a .NET programming language)
 NUnit3TestAdapter (To run the test in Visual Studio)
@@ -15,7 +15,7 @@ SpecFlow.NUnit (To integrate Specflow with NUnit)
 SpecFlow.Tools.MsBuild.Generation (To generate the code behind)
 WebDriverManager (To download browser executables)
 
-#Features Being tested:
+# Features Being tested:
 SearchAndAddMovieToWatchList.feature
 
 SignInToIMDbAccount.feature
@@ -24,7 +24,7 @@ SearchAndAddMovieToWatchList.feature -> Did not complete this test scenario beca
 Therefore, when attempting to create an account, the automation software would either need the development team to provide an environment  
 This is to prevent hackers from crashing the server.
 
-#Tasks
+# Tasks
 1.Author tests and utilities to create an imdb account and to log into https://imdb.com
   a.Make sure you can create an account via the Create New Account form.
 2.Script tests and utilities that adds any media searched for onto the watch list.
@@ -32,6 +32,6 @@ This is to prevent hackers from crashing the server.
   b.Verify that every sort by type modifies the list correctly.
 Automate one other piece of functionality of your choosing. Big or small.
 
-#The tests can be executed from the Test Explorer in Visual Studio
-#I had to tweek some of the locators because there were instances where the webdriver could not find elements. 
-#But, it would be easier to discuss the code instead of me explaining in writing
+# The tests can be executed from the Test Explorer in Visual Studio
+# I had to tweek some of the locators because there were instances where the webdriver could not find elements. 
+# But, it would be easier to discuss the code instead of me explaining in writing
