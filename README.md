@@ -45,3 +45,5 @@ Automate one other piece of functionality of your choosing. Big or small.
 ### The tests can be executed from the Test Explorer in Visual Studio
 ### I had to tweek some of the locators because there were instances where the webdriver could not find elements. 
 ### But, it would be easier to discuss the code instead of me explaining in writing
+
+Copyright© 2020 Sebastien Legros. All rights reserved 
