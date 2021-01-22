@@ -1,6 +1,6 @@
 # IMDbAutomationTaskGit
 
-# Required Tools and Nuget Packages
+## Required Tools and Nuget Packages
 Visual Studio Professional 
 
 SpecFlow Extension
@@ -23,7 +23,7 @@ SpecFlow.Tools.MsBuild.Generation (To generate the code behind)
 
 WebDriverManager (To download browser executables)
 
-# Features Being tested:
+## Features Being tested:
 SearchAndAddMovieToWatchList.feature
 
 WatchListRecordSorting.feature
@@ -35,7 +35,7 @@ Therefore, when attempting to create an account, the automation software would e
 an environment that has the captcha feature disabled. 
 Captchas are used by organizations to to prevent hackers from crashing their sites.
 
-# Tasks
+## Tasks
 1. Author tests and utilities to create an imdb account and to log into https://imdb.com
   a. Make sure you can create an account via the Create New Account form.
 2.Script tests and utilities that adds any media searched for onto the watch list.
