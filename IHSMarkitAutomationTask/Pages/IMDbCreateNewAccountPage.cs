@@ -6,7 +6,10 @@ using System.Text;
 
 namespace IMDbAutomationTask.UI.Test.Pages
 {
-    class IMDbCreateNewAccountPage: BasePage
+    /// <summary>
+    /// class that contains locators for the Create New Account page
+    /// </summary>
+    class IMDbCreateNewAccountPage : BasePage
     {
         /// <summary>
         /// Finds the element that represents the wrapper div for the 'Create Account' form

@@ -26,17 +26,17 @@ namespace IMDbAutomationTask.UI.Test.Step_Definitions.Tests
         }
 
         [StepDefinition(@"I enter user email '(.*)'")]
-        public void WhenIEnterUserEmail(string p0)
+        public void WhenIEnterUserEmail(string userName)
         {
             //Enter string in Email field
-            iMDbSignInPage.EmailInputField.SendKeys("slegr002@fiu.edu");
+            iMDbSignInPage.EmailInputField.SendKeys(userName);
         }
 
         [StepDefinition(@"I enter user password '(.*)'")]
-        public void WhenIEnterUserPassword(string p0)
+        public void WhenIEnterUserPassword(string password)
         {
             //Enter string in password field 
-            iMDbSignInPage.PasswordInputField.SendKeys("Brasil_12");
+            iMDbSignInPage.PasswordInputField.SendKeys(password);
         }
 
         [StepDefinition(@"I click on the Sign In button")]

@@ -29,4 +29,17 @@
     <Folder Include="Step Definitions\Common Steps\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Feature\WatchListRecordSorting.feature.cs">
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Feature\WatchListRecordSorting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>WatchListRecordSorting.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
 </Project>

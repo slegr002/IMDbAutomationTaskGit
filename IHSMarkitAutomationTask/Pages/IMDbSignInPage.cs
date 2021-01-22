@@ -6,6 +6,9 @@ using System.Text;
 
 namespace IMDbAutomationTask.UI.Test.Pages
 {
+    /// <summary>
+    /// class that contains locators for the Sign In page
+    /// </summary>
     public class IMDbSignInPage: BasePage
     {
         /// <summary>

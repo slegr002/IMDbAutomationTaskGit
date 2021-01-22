@@ -20,22 +20,22 @@ namespace IMDbAutomationTask.UI.Test.Feature
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("SignInToIMDbAccount")]
-    public partial class SignInToIMDbAccountFeature
+    [NUnit.Framework.DescriptionAttribute("SearchAndAddMovieToWatchList")]
+    public partial class SearchAndAddMovieToWatchListFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "SignInToIMDbAccount.feature"
+#line 1 "SearchAndAddMovieToWatchList.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature", "SignInToIMDbAccount", "\tAs a IMDb User\r\n\tI want to be able to Login using IMDb User Account", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature", "SearchAndAddMovieToWatchList", "\tAs a IMDb User\r\n\tI Want to search and Add a movie to the watchlist", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,14 +74,14 @@ namespace IMDbAutomationTask.UI.Test.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login to Account")]
+        [NUnit.Framework.DescriptionAttribute("Search And Add Movie To WatchList")]
         [NUnit.Framework.CategoryAttribute("Scenario1")]
-        public virtual void LoginToAccount()
+        public virtual void SearchAndAddMovieToWatchList()
         {
             string[] tagsOfScenario = new string[] {
                     "Scenario1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to Account", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search And Add Movie To WatchList", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,7 +118,22 @@ this.ScenarioInitialize(scenarioInfo);
   testRunner.And("I click on the Sign In button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.Then("I\'m signed in to user account for \'Sebastien\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I want to search for a movie", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 13
+  testRunner.And("I search for \'The Terminator\' in the Search Bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+ testRunner.Then("The search has returned results for \'The Terminator\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 15
+ testRunner.When("I click on a record for \'The Terminator\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 16
+  testRunner.And("Add to the Watchlist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 17
+ testRunner.Then("the Record was successfully added to the Watch list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

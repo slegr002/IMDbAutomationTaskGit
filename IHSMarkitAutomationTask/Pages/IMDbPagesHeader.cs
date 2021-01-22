@@ -6,7 +6,10 @@ using System.Text;
 
 namespace IMDbAutomationTask.UI.Test.Pages
 {
-    class IMDbPagesHeader: BasePage
+    /// <summary>
+    /// class that contains locators for the Header page
+    /// </summary>
+    class IMDbPagesHeader : BasePage
     {
         /// <summary>
         /// Finds the input Element that represents the Suggestion Search Bar
@@ -29,5 +32,11 @@ namespace IMDbAutomationTask.UI.Test.Pages
         /// </summary>
         public IWebElement PageHeaderUserAccountButton =>
             this.LookUpElement(By.XPath("//*[@id='imdbHeader']//span[contains(@class, 'user-name')]"));
+
+        /// <summary>
+        /// Finds the div Element that represents the header watchlist button
+        /// </summary>
+        public IWebElement WatchListButton => 
+            this.LookUpElement(By.XPath("//*[@id='imdbHeader']//div[contains(@class, 'watchlist-button')]"));
     }
 }
