@@ -32,8 +32,8 @@ SignInToIMDbAccount.feature
 
 CreatingNewIMDbUserAccount.feature -> Did not complete this test scenario because the site has a Captcha feature setup. 
 Therefore, when attempting to create an account, the automation software would either need the development team to provide 
-an environment that has the captcha disabled. 
-This is to prevent hackers from crashing the server.
+an environment that has the captcha feature disabled. 
+Captchas are used by organizations to to prevent hackers from crashing their sites.
 
 # Tasks
 1. Author tests and utilities to create an imdb account and to log into https://imdb.com
