@@ -31,7 +31,8 @@ WatchListRecordSorting.feature
 SignInToIMDbAccount.feature
 
 CreatingNewIMDbUserAccount.feature -> Did not complete this test scenario because the site has a Captcha feature setup. 
-Therefore, when attempting to create an account, the automation software would either need the development team to provide an environment  
+Therefore, when attempting to create an account, the automation software would either need the development team to provide 
+an environment that has the captcha disabled. 
 This is to prevent hackers from crashing the server.
 
 # Tasks
