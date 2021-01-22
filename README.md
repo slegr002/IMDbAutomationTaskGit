@@ -1,10 +1,10 @@
 # IMDbAutomationTaskGit
 
-# Required Tools
+# Required Tools and Nuget Packages
 Visual Studio Professional 
+
 SpecFlow Extension
 
-# Nuget Packages
 FluentAssertions (to assert results)
 
 NUnit (To run the test in a .NET programming language)
