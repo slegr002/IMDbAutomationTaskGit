@@ -25,13 +25,13 @@ Therefore, when attempting to create an account, the automation software would e
 This is to prevent hackers from crashing the server.
 
 # Tasks
-1.Author tests and utilities to create an imdb account and to log into https://imdb.com
-  a.Make sure you can create an account via the Create New Account form.
+1. Author tests and utilities to create an imdb account and to log into https://imdb.com
+  a. Make sure you can create an account via the Create New Account form.
 2.Script tests and utilities that adds any media searched for onto the watch list.
-  a.Verify that you can add and remove items from the watch list.
-  b.Verify that every sort by type modifies the list correctly.
+  a. Verify that you can add and remove items from the watch list.
+  b. Verify that every sort by type modifies the list correctly.
 Automate one other piece of functionality of your choosing. Big or small.
 
-# The tests can be executed from the Test Explorer in Visual Studio
-# I had to tweek some of the locators because there were instances where the webdriver could not find elements. 
-# But, it would be easier to discuss the code instead of me explaining in writing
+### The tests can be executed from the Test Explorer in Visual Studio
+###I had to tweek some of the locators because there were instances where the webdriver could not find elements. 
+###But, it would be easier to discuss the code instead of me explaining in writing
