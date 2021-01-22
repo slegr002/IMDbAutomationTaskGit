@@ -6,13 +6,21 @@ SpecFlow Extension
 
 # Nuget Packages
 FluentAssertions (to assert results)
+
 NUnit (To run the test in a .NET programming language)
+
 NUnit3TestAdapter (To run the test in Visual Studio)
+
 Selenium.Support (For browser automation)
+
 Selenium.WebDriver (To send commands to browser)
+
 SpecFlow (To run BDD style Gherkin based test scenario writing in Visual Studio)
+
 SpecFlow.NUnit (To integrate Specflow with NUnit)
+
 SpecFlow.Tools.MsBuild.Generation (To generate the code behind)
+
 WebDriverManager (To download browser executables)
 
 # Features Being tested:
