@@ -26,9 +26,11 @@ WebDriverManager (To download browser executables)
 # Features Being tested:
 SearchAndAddMovieToWatchList.feature
 
+WatchListRecordSorting.feature
+
 SignInToIMDbAccount.feature
 
-SearchAndAddMovieToWatchList.feature -> Did not complete this test scenario because the site has a Captcha feature setup. 
+CreatingNewIMDbUserAccount.feature -> Did not complete this test scenario because the site has a Captcha feature setup. 
 Therefore, when attempting to create an account, the automation software would either need the development team to provide an environment  
 This is to prevent hackers from crashing the server.
 
